@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CarView">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d3-BV-gwj">
+                    <rect key="frame" x="0.0" y="17" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="pmF-m7-rYK"/>
+                    </constraints>
+                    <state key="normal" title="狗狗">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="pmF-m7-rYK"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="dogClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Uv7-Qx-7hl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZt-bF-cJK">
+                    <rect key="frame" x="81" y="22" width="1" height="21"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="WNv-wI-TY6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3w-rC-Uye">
+                    <rect key="frame" x="81" y="17" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="1O7-QT-cFV"/>
+                    </constraints>
+                    <state key="normal" title="猫猫">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1O7-QT-cFV"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="catClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="a8w-jn-etw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPq-2j-oEM">
+                    <rect key="frame" x="161" y="22" width="1" height="21"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="w0x-cA-M7j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbY-wr-gGo">
+                    <rect key="frame" x="161" y="17" width="81" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="R71-uP-TZn"/>
+                    </constraints>
+                    <state key="normal" title="小宠">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="R71-uP-TZn"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="petClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="coS-os-TG9"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bac-6D-zBk">
+                    <rect key="frame" x="242" y="22" width="1" height="21"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="kJz-Dd-VRj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpi-B9-peY">
+                    <rect key="frame" x="242" y="17" width="80" height="30"/>
+                    <state key="normal" title="水族">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="waterClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="fse-Vd-NQh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="baseline" secondItem="Bac-6D-zBk" secondAttribute="firstBaseline" id="0ri-u5-Iod"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="leading" secondItem="FbY-wr-gGo" secondAttribute="leading" id="19W-JH-ozj"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1KT-21-DDp"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="O3w-rC-Uye" secondAttribute="width" id="29R-tH-vd1"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="height" secondItem="FbY-wr-gGo" secondAttribute="height" id="8tb-gy-zmK"/>
+                <constraint firstItem="FbY-wr-gGo" firstAttribute="leading" secondItem="yZt-bF-cJK" secondAttribute="trailing" constant="79" id="Ew3-Bm-YR7"/>
+                <constraint firstItem="Bac-6D-zBk" firstAttribute="leading" secondItem="Vpi-B9-peY" secondAttribute="leading" id="FnB-9v-ZgN"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="FbY-wr-gGo" secondAttribute="width" id="FuH-c8-1wk"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="7d3-BV-gwj" secondAttribute="height" multiplier="8:3" id="G4z-7C-9QM"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="7d3-BV-gwj" secondAttribute="width" constant="1" id="Ink-r4-BUR"/>
+                <constraint firstItem="O3w-rC-Uye" firstAttribute="leading" secondItem="7d3-BV-gwj" secondAttribute="trailing" constant="1" id="KkZ-Ou-Ge1"/>
+                <constraint firstAttribute="trailing" secondItem="Bac-6D-zBk" secondAttribute="trailing" constant="79" id="MVH-7e-zSd"/>
+                <constraint firstItem="FbY-wr-gGo" firstAttribute="baseline" secondItem="Vpi-B9-peY" secondAttribute="baseline" id="Ohf-gt-IKl"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="baseline" secondItem="Bac-6D-zBk" secondAttribute="baseline" id="P0M-c3-U9p"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="baseline" secondItem="yZt-bF-cJK" secondAttribute="baseline" id="PSn-JK-O1F"/>
+                <constraint firstItem="O3w-rC-Uye" firstAttribute="baseline" secondItem="FbY-wr-gGo" secondAttribute="baseline" id="RBl-Lg-JsS"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="height" secondItem="7d3-BV-gwj" secondAttribute="height" id="RUm-KG-p3w"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="leading" secondItem="FbY-wr-gGo" secondAttribute="trailing" id="VcX-Pq-nCp"/>
+                <constraint firstItem="7d3-BV-gwj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WvJ-V5-eUd"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="firstBaseline" secondItem="yZt-bF-cJK" secondAttribute="baseline" id="aIg-Np-erg"/>
+                <constraint firstItem="FbY-wr-gGo" firstAttribute="leading" secondItem="O3w-rC-Uye" secondAttribute="trailing" id="aQF-Qf-o59"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="centerY" secondItem="FbY-wr-gGo" secondAttribute="centerY" id="eHn-c0-FuR"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="FbY-wr-gGo" secondAttribute="height" multiplier="8:3" id="evM-ip-hA8"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="width" secondItem="O3w-rC-Uye" secondAttribute="height" multiplier="8:3" id="hgZ-Yn-P9X"/>
+                <constraint firstItem="O3w-rC-Uye" firstAttribute="baseline" secondItem="7d3-BV-gwj" secondAttribute="baseline" id="s3Y-HL-32I"/>
+                <constraint firstItem="yZt-bF-cJK" firstAttribute="leading" secondItem="O3w-rC-Uye" secondAttribute="leading" id="tlh-3H-l88"/>
+                <constraint firstAttribute="trailing" secondItem="Vpi-B9-peY" secondAttribute="trailing" id="vEb-fX-bjf"/>
+                <constraint firstItem="Vpi-B9-peY" firstAttribute="height" secondItem="O3w-rC-Uye" secondAttribute="height" id="wFY-1P-wJY"/>
+                <constraint firstAttribute="centerX" secondItem="gPq-2j-oEM" secondAttribute="centerX" id="wod-sR-odF"/>
+                <constraint firstItem="gPq-2j-oEM" firstAttribute="baseline" secondItem="yZt-bF-cJK" secondAttribute="firstBaseline" id="xlg-ux-bpN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ew3-Bm-YR7"/>
+                    <exclude reference="19W-JH-ozj"/>
+                    <exclude reference="MVH-7e-zSd"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="carBtn" destination="O3w-rC-Uye" id="xKV-Oa-ezl"/>
+                <outlet property="dogBtn" destination="7d3-BV-gwj" id="IuM-oT-e9S"/>
+                <outlet property="petBtn" destination="FbY-wr-gGo" id="znU-DD-Zvb"/>
+                <outlet property="waterBtn" destination="Vpi-B9-peY" id="NZf-j1-RAA"/>
+            </connections>
+            <point key="canvasLocation" x="402" y="256"/>
+        </view>
+    </objects>
+</document>
